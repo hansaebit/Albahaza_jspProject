@@ -1,0 +1,1533 @@
+
+body{
+    background-image:url(../img/backgroundbodyimg.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+    overflow:visible;
+    margin:0;
+    padding:0;
+
+
+}
+caption{
+    color:black;
+    font-weight:bold;
+}
+a{
+    color:black;
+}
+
+table{
+    border:1px solid;
+}
+
+/* footer */
+
+img{
+    vertical-align:top;
+}
+
+pre{
+    background-color: rgba(0,0,0,0);
+    border : 0;
+    color:white;
+    font-size:15px;
+    white-space: pre-wrap;
+}
+footer{
+    background-color:rgba(0,0,0,0.9);
+    color:white;
+    width:100%;
+    margin:0 auto;
+
+
+}
+footer div.footer_info{
+
+    display:flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+
+}
+footer div div{
+    display:inline-block;
+    margin-top:30px;
+    margin-bottom: 30px;
+
+}
+footer div div p.footer_title{
+    font-size:22px;
+    font-weight: bolder;
+}
+span.phone{
+    color:orange;
+    font-size:28px;
+    display:block;
+
+}
+span.alert{
+    color:gray;
+}
+
+/* //footer end */
+
+/* Header */
+
+[tooltip]:hover{
+    position:relative;
+}
+[tooltip]:hover:after{
+    content: attr(tooltip);
+    position:absolute;
+    width:300px;
+    bottom:100%;
+    left:0;
+    top:30px;
+    color:yellow;
+    font-size:18px;
+    z-index:99999;
+}
+
+
+header div h1 a{
+    background-image:url(../img/MainLogo.png);
+    width:200px;
+    height:80px;
+    display:inline-block;
+    text-indent:-9999em;
+    margin-left:30%;
+    /* image replacement IR */
+
+}
+h1{
+    margin:0;
+}
+header{
+    background-color:rgba(0,0,0,0.8);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    height:95px;
+    z-index:999;
+}
+
+
+nav.navbar ul.a_li{
+    list-style:none;
+    display:flex;
+    font-size:20px;
+    justify-content: space-evenly;
+    margin-left: 30px;
+}
+nav.navbar ul.a_li li{
+    margin-top:30px;
+    font-weight: bold;
+    margin-right:60px;
+
+
+}
+nav.navbar ul.a_li li div{
+    transition:all 0.35s;
+}
+nav.navbar ul.a_li li a{
+    color:white;
+
+}
+
+nav.navbar ul.b_li{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+
+}
+nav.navbar ul.b_li li{
+    margin-top:30px;
+    margin-right:30px;
+    font-size:15px;
+}
+
+nav.navbar ul.b_li li.intro{
+    margin-top:35px;
+    color:white;
+    font-weight: bold;
+}
+
+button.logoutbtn{
+    width:100px;
+    background-color: rgb(3, 100, 143);
+}
+
+nav.navbar ul.a_li li:hover{
+    cursor:pointer;
+}
+
+nav.navbar ul.a_li a:hover {
+    color:yellow;
+    cursor:pointer;
+}
+/* hamburger menu bar*/
+header input.open_menu,
+header label.burger,
+header nav.slide_bar{
+    display:none;
+}
+@media screen and (max-width:93rem){
+    nav.navbar{
+        display:none;
+    }
+    header nav.slide_bar{
+        display:flex;
+        flex-direction:column;
+        position:absolute;
+        justify-content: flex-start;
+        top:100%;
+        left:100%;
+        right:-100%;
+        height:1000px;
+        background-color:rgba(0,0,0,0.9);
+        width:30%;
+
+        transition:0.35s;
+        text-align: center;
+    }
+    header nav.slide_bar div{
+        margin-top:10px;
+        margin-bottom:20px;
+    }
+    header nav.slide_bar div a{
+        color:white;
+        font-size:20px;
+    }
+    header nav.slide_bar div.slide_info a:hover{
+        cursor:pointer;
+        color:yellow;
+    }
+    slide_info > div{
+        font-size:20px;
+    }
+    header nav.slide_bar div.slide_sign{
+
+    }
+    header label.burger{
+        display:block;
+        margin-right:1%;
+        width:3em; height:3em;
+        background:#3498db;
+        color:#fff; text-align:center;
+        line-height:3em;
+        margin-bottom: 0.25em;
+        border-radius: 10px;
+        cursor:pointer;
+        transition:background
+        0.36s;
+    }
+    input.open_menu[type=checkbox]:checked + label.burger{
+        background:#145377;
+    }
+    input.open_menu[type=checkbox]:checked ~ nav{
+        top:100%;
+        right:0;
+        left:70%;
+        bottom:0;
+    }
+    div.slide_sign li.intro_side{
+        display:inline;
+        margin:0;
+    }
+    div.slide_sign li.intro_side button{
+        display:inline;
+        margin:0 0 0 0;
+    }
+}
+/* //hamburger menu bar*/
+
+/* //header end */
+
+/* body page Layout */
+
+div.wrapper{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    min-height: 100vh;
+}
+
+div.content{
+    width:100%;
+    margin-bottom:150px;
+    margin-top:95px;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+
+
+}
+div.footer{
+    width:100%;
+    margin-top:auto;
+}
+/* //body page layout end*/
+
+
+
+/* Main 메인페이지 */
+/*이미지!!!!*/
+div.main_wrapper div.main_content1 img{
+    width:1500px;
+    height:700px;
+    object-fit:fill;
+    border-radius: 20px;
+    opacity:95%;
+
+}
+
+div.main_wrapper div.main_content img{
+    width:350px;
+    height:200px;
+    object-fit:fill;
+}
+
+
+div.main_wrapper{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+/* main content1 */
+div.main_content1{
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0);
+    margin-top:75px;
+}
+.swiper-container {
+    width: 1500px;
+    height: 750px;
+}
+@media screen and (max-width:78rem){
+    div.main_wrapper div.main_content1 img{
+        width:480px;
+        height:350px;
+        object-fit:fill;
+        border-radius: 20px;
+        opacity:95%;
+
+    }
+    .swiper-container {
+        width: 480px;
+        height: 350px;
+    }
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: rgba(0,0,0,0);
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+/* //main content1 end*/
+
+/* main content2 */
+div.main_content2_title{
+    margin-top:100px;
+    font-size:30px;
+    font-weight: bold;
+
+}
+
+div.main_content2{
+    margin-top:25px;
+    display:flex;
+    justify-content: center;
+
+}
+div.main_content2 li{
+    list-style-type: none;
+    position:relative;
+    flex-direction: row;
+    margin-bottom:50px;
+}
+div.main_content2 div.content2_hover{
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    background:rgba(0,0,0,0.7);
+    color:white;
+    text-align:center;
+    padding-top:50px;
+    list-style-type: none;
+    opacity:0;
+}
+div.main_content2 > ul{
+    display:flex;
+    width:80%;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    padding:0;
+
+}
+div.main_content2 li a{
+    color:#fff;
+}
+div.main_content2 li:hover .content2_hover{
+    opacity:1;
+}
+@media screen and (max-width:78rem){
+    div.main_content2 > ul{
+        width:20%;
+    }
+}
+/* //main content2 end */
+/* main content3 start */
+div.main_content3{
+    width:80%;
+    height:300px;
+    background-color: rgba(0,0,0,0.8);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+div.main_content3 > p{
+    color:white;
+    font-size: 10em;
+
+}
+/* //main end */
+
+/* Login page form*/
+
+ /*로그인 alert*/
+div.alert-dismissible{
+    display:flex;
+    justify-content: space-between;
+    line-height:28px;
+    position:absolute;
+    top:30%;
+    width:360px;
+    height:50px;
+    padding:10px;
+    transition:0.2s;
+    opacity:0;
+    visibility: hidden;
+}
+
+b.alert_close{
+    font-size:20px;
+    text-align: right;
+    font-weight: bold;
+    cursor:pointer;
+    transition:0.2s;
+}
+b.alert_close:hover{
+    opacity: 0.8;
+    font-size:2em;
+}
+div.login_success_icon{
+    background-image:url(../img/loginsuccess.png);
+    z-index: 1000;
+    width: 100%; height: 100%;
+    left: 0; top: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+    overflow:visible;
+}
+div.chickicon{
+    background-image:url(../img/chickicon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow:visible;
+    z-index: 1000;
+    position: fixed;
+    width: 150px; height: 150px;
+    transition:2s;
+    left: 20%; top: 33%;
+    /*left:67%;*/
+}
+div.login_success_icon input[type=checkbox]:checked + div.chickicon{
+        left: 67%; top:33%;
+}
+
+div.login_success{
+    opacity:0;
+    visibility: hidden;
+    z-index: 1000;
+    position: fixed;
+    width: 100%; height: 100%;
+    left: 0; top: 0;
+    background-color: rgba(0,0,0, 0.6);
+    overflow-x: hidden;
+}
+
+/* //로그인 alert*/
+div.login_wrapper{
+
+    width: 500px;
+    height: 800px;
+    display:flex;
+    align-items: center;
+    justify-self: center;
+}
+div.login_wrapper form{
+    background-image:url(../img/chick.png);
+    width : 450px;
+    height: 450px;
+    margin: 0 auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+}
+div.login_wrapper fieldset{
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;;
+    width:90%;
+    height:90%;
+}
+
+div.login_form{
+    font-size: 50px;
+    color:white;
+    margin-bottom:10px;
+}
+
+div.login input{
+    width:350px;
+    height:50px;
+    border: none;
+    background: #f1f1f1;
+}
+
+.btn_login{
+    color:white;
+    font-sixe:1.5em;
+    font-weight:bold;
+    width:350px;
+    height:50px;
+    border-radius: 10px;
+    background-color:rgba(34, 65, 236,0.8);
+    border:1px solid rgba(0,0,0,0);
+    transition:0.2s;
+}
+.btn_login:hover{
+    color:yellow;
+    background-color:rgba(34, 65, 236,1);
+}
+div.login_append{
+    align-self: start;
+    margin-left:30px;
+}
+
+span.txt_lab{
+    color:white;
+
+}
+
+.screen_out{
+    display:none;
+}
+
+/* //login page form end */
+
+/*resume*/
+div.resume_wrapper{
+    width:80%;
+    display:flex;
+    justify-content: center;
+}
+div.resume_wrapper input[type=text]{
+    background-color:rgba(0,0,0,0.1);
+    border-radius: 5px;
+    border:none;
+}
+div.resume_wrapper hr{
+    width:100%;
+    border:1px solid rgba(0,0,0,0.1);
+}
+div.resume_wrapper > form{
+    background-color:rgba(255,255,255,0.8);
+    margin-top:50px;
+    padding:3%;
+    display:flex;
+    flex-direction: column;
+    width:1000px;
+    border:1px solid rgba(0,0,0,0.1);
+    border-radius: 10px;
+    box-shadow:20px 20px 5px rgba(0,0,0,0.3);
+
+}
+div.resume_header_index{
+    font-weight: bold;
+    font-size:15px;
+    display:flex;
+    justify-content: space-between;
+}
+div.resume_header{
+    display:flex;
+    justify-content: space-between;
+    font-size:50px;
+}
+div.resume_header input[type=text]{
+    height:40px;
+    width:400px;
+    font-weight:lighter;
+    font-size:20px;
+}
+div.resume_body{
+    display:flex;
+}
+
+div.resume_footer{
+    display:flex;
+}
+div.resume_footer textarea{
+    width:100%;
+    background-color: rgba(0,0,0,0.1);
+    height:250px;
+    color:black;
+    font-weight:lighter;
+    border:none;
+}
+
+div.resume_title{
+    width:25%;
+    font-weight: bold;
+    font-size:25px;
+}
+div.resume_contents{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    font-size:20px;
+    font-weight: bold;
+}
+div.resume_contents input[type=text]{
+    height:40px;
+    width:400px;
+    font-weight:lighter;
+    font-size:20px;
+}
+div.resume_contents select {
+    height:40px;
+    width:150px;
+    font-weight:lighter;
+    font-size:20px;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 10px;
+    border:none;
+}
+div.resume_contents label {
+    margin-bottom:20px;
+}
+div.resume_button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100px;
+}
+div.resume_button button{
+    width:15%;
+    height:40px;
+    margin-right: 15px;
+    font-weight: bold;
+    color:white;
+    border-radius: 5px;
+    background-color:black;
+}
+div.resume_button button:hover{
+    opacity:0.7;
+}
+/* // resume end*/
+/* joboffer form*/
+div.jobofferform_wrapper{
+    width:80%;
+    display:flex;
+    justify-content: center;
+}
+div.jobofferform_wrapper input[type=text]{
+    background-color:rgba(0,0,0,0.1);
+    border-radius: 5px;
+    border:none;
+}
+div.jobofferform_wrapper hr{
+    width:100%;
+    border:1px solid rgba(0,0,0,0.1);
+}
+div.jobofferform_wrapper > form{
+    background-color:rgba(255,255,255,0.8);
+    margin-top:50px;
+    padding:3%;
+    display:flex;
+    flex-direction: column;
+    width:1000px;
+    border:1px solid rgba(0,0,0,0.1);
+    border-radius: 10px;
+    box-shadow:20px 20px 5px rgba(0,0,0,0.3);
+}
+
+div.jobofferform_header{
+    display:flex;
+    justify-content: space-between;
+    font-size:50px;
+}
+div.jobofferform_header input[type=text]{
+    height:40px;
+    width:400px;
+    font-weight:lighter;
+    font-size:20px;
+}
+div.jobofferform_body{
+    display:flex;
+}
+
+div.jobofferform_footer{
+    display:flex;
+}
+div.jobofferform_footer textarea{
+    width:100%;
+    background-color: rgba(0,0,0,0.1);
+    height:250px;
+    color:black;
+    font-weight:lighter;
+    border:none;
+}
+
+div.jobofferform_title{
+    width:25%;
+    font-weight: bold;
+    font-size:25px;
+}
+div.jobofferform_contents{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    font-size:20px;
+    font-weight: bold;
+}
+div.jobofferform_contents input[type=text]{
+    height:40px;
+    width:400px;
+    font-weight:lighter;
+    font-size:20px;
+}
+div.jobofferform_contents select {
+    height:40px;
+    width:150px;
+    font-weight:lighter;
+    font-size:20px;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 10px;
+    border:none;
+}
+div.jobofferform_contents label {
+    margin-bottom:20px;
+}
+div.jobofferform_button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100px;
+}
+div.jobofferform_button button{
+    width:15%;
+    height:40px;
+    margin-right: 15px;
+    font-weight: bold;
+    color:white;
+    border-radius: 5px;
+    background-color:black;
+}
+div.jobofferform_button button:hover{
+    opacity:0.7;
+}
+/* // jobofferform end*/
+/* resumedetail start */
+div.resumedetail_wrapper{
+    width:80%;
+    display:flex;
+    justify-content: center;
+}
+div.resumedetail_wrapper input[type=text]{
+    background-color:rgba(0,0,0,0);
+    border:none;
+}
+div.resumedetail_wrapper hr{
+    width:100%;
+    border:1px solid rgba(0,0,0,0.1);
+}
+div.resumedetail_wrapper > form{
+    background-color:rgba(255,255,255,0.8);
+    margin-top:50px;
+    padding:3%;
+    display:flex;
+    flex-direction: column;
+    width:1000px;
+    border:1px solid rgba(0,0,0,0.1);
+    border-radius: 10px;
+    box-shadow:20px 20px 5px rgba(0,0,0,0.3);
+}
+div.resumedetail_header_index{
+    font-weight: bold;
+    font-size:15px;
+    display:flex;
+    justify-content: space-between;
+}
+div.resumedetail_header{
+    display:flex;
+    justify-content: space-between;
+    font-size:50px;
+}
+div.resumedetail_header input[type=text]{
+    height:100px;
+    width:50%;
+    font-weight:lighter;
+    font-size:40px;
+}
+div.resumedetail_body{
+    display:flex;
+}
+
+div.resumedetail_footer{
+    display:flex;
+}
+div.resumedetail_footer pre{
+    width:100%;
+    background-color: white;
+    height:250px;
+    color:black;
+    font-weight:lighter;
+
+}
+
+div.resumedetail_title{
+    width:25%;
+    font-weight: bold;
+    font-size:25px;
+}
+div.resumedetail_contents{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    font-size:20px;
+    font-weight: bold;
+}
+div.resumedetail_contents input[type=text]{
+    height:50px;
+    font-size:15px;
+
+}
+
+div.resumedetail_button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100px;
+}
+div.resumedetail_button button{
+    width:15%;
+    height:40px;
+    margin-right: 15px;
+    font-weight: bold;
+    color:white;
+    border-radius: 5px;
+    background-color:black;
+}
+div.resumedetail_button button:hover{
+    opacity:0.7;
+}
+/* // resumedetail end */
+
+/* jobofferdetail start */
+div.jobofferdetail_wrapper{
+    width:80%;
+    display:flex;
+    justify-content: center;
+}
+div.jobofferdetail_wrapper input[type=text]{
+    background-color:rgba(0,0,0,0);
+    border:none;
+}
+div.jobofferdetail_wrapper hr{
+    width:100%;
+    border:1px solid rgba(0,0,0,0.1);
+}
+div.jobofferdetail_wrapper > form{
+    background-color:rgba(255,255,255,0.8);
+    margin-top:50px;
+    padding:3%;
+    display:flex;
+    flex-direction: column;
+    width:1000px;
+    border:1px solid rgba(0,0,0,0.1);
+    border-radius: 10px;
+    box-shadow:20px 20px 5px rgba(0,0,0,0.3);
+}
+div.jobofferdetail_header_index{
+    font-weight: bold;
+    font-size:15px;
+    display:flex;
+    justify-content: space-between;
+}
+div.jobofferdetail_header_index div.likebutton{
+    background-image:url(../img/likebutton.png);
+    width:100px;
+    height:50px;
+    background-size:100px 40px;
+    background-repeat: no-repeat;
+    background-position:right top;
+    cursor:pointer;
+}
+div.jobofferdetail_header_index div.likebutton:hover{
+    width:150px;
+    height:50px;
+    background-size:150px, 40px;
+
+}
+div.jobofferdetail_header{
+    display:flex;
+    justify-content: space-between;
+    font-size:50px;
+}
+div.jobofferdetail_header input[type=text]{
+    height:100px;
+    width:50%;
+    font-size:40px;
+    font-weight:lighter;
+}
+div.jobofferdetail_body{
+    display:flex;
+}
+
+div.jobofferdetail_footer{
+    display:flex;
+}
+div.jobofferdetail_footer pre{
+    width:100%;
+    background-color: white;
+    height:250px;
+    color:black;
+    font-weight:lighter;
+
+}
+
+div.jobofferdetail_title{
+    width:25%;
+    font-weight: bold;
+    font-size:25px;
+}
+div.jobofferdetail_contents{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    font-size:20px;
+    font-weight: bold;
+}
+div.jobofferdetail_contents input[type=text]{
+    height:50px;
+    font-size:15px;
+
+}
+
+div.jobofferdetail_button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100px;
+}
+div.jobofferdetail_button button{
+    width:15%;
+    height:40px;
+    margin-right: 15px;
+    font-weight: bold;
+    color:white;
+    border-radius: 5px;
+    background-color:black;
+}
+div.jobofferdetail_button button:hover{
+    opacity:0.7;
+}
+
+
+
+/* // jobofferdetail end */
+
+
+/* mypage */
+div.mp_wrapper{
+    width:90%;
+    color:black;
+    margin-top:-80px;
+}
+div.mp_category{
+    background-color:rgba(255,255,255,0.8);
+    margin-top:120px;
+    margin-right:0;
+    position:fixed;
+    width:300px;
+    padding:2%;
+    border-radius: 10px;
+    box-shadow:10px 10px 2px rgba(0,0,0,0.3);
+}
+
+div.mp_category li{
+    height:30px;
+    width:150px;
+    margin-bottom:10px;
+    font-size:20px;
+}
+
+div.mp_category > ul > li{
+    font-weight:bold;
+}
+div.mp_category h1{
+    font-weight: bold;
+    background-color:rgb(237,184,186);
+    padding:5px;
+    border-radius: 10px;
+    line-height:48px;
+    text-align:center;
+
+
+}
+div.mp_main{
+    margin-left:25%;
+    width:70%;
+    display:flex;
+    flex-direction: column;
+}
+div.mp_main > div{
+    margin-top:100px;
+    background-color:rgba(255,255,255,0.5);
+    padding:2%;
+    border-radius: 10px;
+    box-shadow:10px 10px 2px rgba(0,0,0,0.3);
+
+}
+div.mp_main div h1{
+    padding-top:20px;
+    display:inline-block;
+}
+div.mp_main div.mp_title{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+div.mp_main div.myinfo{
+    box-shadow:5px 5px 1px rgba(0,0,0,0.3);
+}
+div.mp_main div.collapse hr{
+    border:1px solid rgba(0,0,0,0.1);
+    margin-bottom:50px;
+}
+
+div.mp_main button{
+    margin-right:15px;
+    width:150px;
+    height:40px;
+    border:none;
+    background-color:rgba(0,0,0,0.1);
+    border-radius: 5px;
+    line-height:40px;
+}
+div.mp_title h1{
+    margin-right:15px;
+}
+
+div.mp_content3{
+    margin-bottom:250px;
+}
+/* mypage 테이블 CSS */
+div.mp_title{
+    line-height:60px;
+    border-radius:10px;
+    background-color:rgb(239,234,215);
+}
+div.mp_main table {
+    box-shadow:5px 5px 1px rgba(0,0,0,0.3);
+    margin-bottom:100px;
+}
+
+div.mp_main button.btn_myjob{
+    margin:0 auto;
+    border:none;
+    background-color:rgba(0,0,0,0.1);
+    border-radius: 5px;
+    height:50px;
+    font-weight:bold;
+}
+div.mp_main button.btn_myjob:hover{
+    background-color: #3498db;
+}
+
+div.mp_content2 tbody tr:hover,
+div.mp_content3 tbody tr:hover{
+    background-color:rgba(0,0,0,0.1);
+    cursor:pointer;
+}
+
+div.mp_content1 tr th{
+    background-color:rgb(191,234,218);
+    text-align:center;
+}
+
+div.mp_content2 thead tr,
+div.mp_content3 thead tr{
+    background-color:rgb(108,192,186);
+}
+div.mp_content2 tbody tr,
+div.mp_content3 tbody tr{
+    height:50px;
+
+}
+div.mp_content2 tbody td,
+div.mp_content3 tbody td{
+    line-height:50px;
+}
+@media screen and (max-width:80rem){
+    div.mp_category{
+        display:none;
+    }
+    div.mp_wrapper{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    div.mp_main{
+        margin:0;
+        width:500px;
+    }
+}
+/* // Main Page end */
+/* Sign Up */
+div.signup_wrapper{
+    width:80%;
+    display:flex;
+    justify-content: center;
+}
+div.signup_wrapper input[type=text],
+div.signup_wrapper input[type=password],
+div.signup_contents input[type=email]{
+    background-color:rgba(0,0,0,0.1);
+    border-radius: 5px;
+    border:none;
+}
+div.signup_wrapper hr{
+    width:100%;
+    border:1px solid rgba(0,0,0,0.1);
+}
+div.signup_wrapper > form{
+    background-color:rgba(255,255,255,0.8);
+    margin-top:50px;
+    padding:3%;
+    display:flex;
+    flex-direction: column;
+    width:1000px;
+    border:1px solid rgba(0,0,0,0.1);
+    border-radius: 10px;
+    box-shadow:20px 20px 5px rgba(0,0,0,0.3);
+}
+div.signup_wrapper form div.signup_header div p{
+    font-size:15px;
+}
+div.signup_header{
+    display:flex;
+    justify-content: space-between;
+    font-size:50px;
+}
+div.signup_header input[type=text],
+div.signup_header input[type=password],
+div.signup_contents input[type=email]{
+    height:40px;
+    width:400px;
+    font-weight:lighter;
+    font-size:20px;
+}
+div.signup_body{
+    display:flex;
+}
+
+
+div.signup_title{
+    width:1%;
+    font-weight: bold;
+    font-size:25px;
+}
+div.signup_contents{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    font-size:20px;
+    font-weight: bold;
+}
+div.signup_contents input[type=text],
+div.signup_contents input[type=password],
+div.signup_contents input[type=email]{
+    height:40px;
+    width:100%;
+    font-weight:lighter;
+    font-size:20px;
+}
+div.signup_contents select {
+    height:40px;
+    width:150px;
+    font-weight:lighter;
+    font-size:20px;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 10px;
+    border:none;
+}
+div.signup_contents label {
+    margin-bottom:20px;
+}
+div.signup_button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100px;
+}
+div.signup_button button {
+    width: 15%;
+    height: 40px;
+    margin-right: 15px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    background-color: black;
+}
+div.signup_button button:hover{
+    opacity:0.7;
+}
+/* //Sign up end */
+/* Sign Out */
+div.so_wrapper{
+    margin-top:150px;
+    width:80%;
+    display:flex;
+    justify-content: center;
+}
+div.so_wrapper form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:100px 0;
+    width:480px;
+    box-shadow:10px 10px 30px #000808;
+
+}
+div.so_wrapper form button{
+    margin-top:20px;
+    width:150px;
+    height:40px;
+    border:none;
+    background-color:rgba(0,0,0,0.1);
+    border-radius: 5px;
+    color:red;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* Member Update Form */
+
+div.memberupdate_wrapper{
+    width:80%;
+    display:flex;
+    justify-content: center;
+}
+div.memberupdate_wrapper input[type=text],
+div.memberupdate_wrapper input[type=password],
+div.memberupdate_wrapper input[type=email]{
+    background-color:rgba(0,0,0,0.1);
+    border-radius: 5px;
+    border:none;
+}
+div.memberupdate_wrapper hr{
+    width:100%;
+    border:1px solid rgba(0,0,0,0.1);
+}
+div.memberupdate_wrapper > form{
+    background-color:rgba(255,255,255,0.8);
+    margin-top:50px;
+    padding:3%;
+    display:flex;
+    flex-direction: column;
+    width:1000px;
+    border:1px solid rgba(0,0,0,0.1);
+    border-radius: 10px;
+    box-shadow:20px 20px 5px rgba(0,0,0,0.3);
+}
+div.memberupdate_wrapper form div.memberupdate_header div p{
+    font-size:15px;
+}
+div.memberupdate_header{
+    display:flex;
+    justify-content: space-between;
+    font-size:50px;
+}
+
+div.memberupdate_contents input[type=email]{
+    height:40px;
+    width:400px;
+    font-weight:lighter;
+    font-size:20px;
+}
+div.memberupdate_body{
+    display:flex;
+}
+
+
+div.memberupdate_title{
+    width:1%;
+    font-weight: bold;
+    font-size:25px;
+}
+div.memberupdate_contents{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    font-size:20px;
+    font-weight: bold;
+}
+div.memberupdate_contents input[type=text],
+div.memberupdate_contents input[type=password],
+div.memberupdate_contents input[type=email]{
+    height:40px;
+    width:100%;
+    font-weight:lighter;
+    font-size:20px;
+}
+div.memberupdate_contents select {
+    height:40px;
+    width:150px;
+    font-weight:lighter;
+    font-size:20px;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 10px;
+    border:none;
+}
+div.memberupdate_contents label {
+    margin-bottom:20px;
+}
+div.memberupdate_button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100px;
+}
+div.memberupdate_button button{
+    width:15%;
+    height:40px;
+    margin-right: 15px;
+    font-weight: bold;
+    color:white;
+    border-radius: 5px;
+    background-color:black;
+}
+div.memberupdate_button button:hover{
+    opacity:0.7;
+}
+
+/* //member update end */
+
+/* resume update form start */
+div.resumeupdateform_wrapper{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size:20px;
+}
+div.resumeupdateform_wrapper form > div{
+
+    padding:30px;
+    margin:0;
+
+}
+div.resumeupdateform_wrapper > form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width:800px;
+    padding:40px 30px;
+    margin:30px;
+    box-shadow:10px 10px 30px #000808;
+    border-radius: 10px;
+    background-color:rgba(255,255,255,0.8);
+}
+/* // resume update form end */
+/* joboffer update form start */
+div.jobofferupdateform_wrapper{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size:20px;
+}
+div.jobofferupdateform_wrapper form > div{
+
+    padding:30px;
+    margin:0;
+
+}
+div.jobofferupdateform_wrapper > form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width:800px;
+    padding:40px 30px;
+    margin:30px;
+    box-shadow:10px 10px 30px #000808;
+    border-radius: 10px;
+    background-color:rgba(255,255,255,0.8);
+}
+/* resume+joboffer fillter */
+div.paging li{
+    cursor:pointer;
+}
+/* resume fillter */
+div.resumefind_wrapper{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div.resumefind_wrapper > h1{
+    margin-top:50px;
+    font-size:3em;
+    margin-right:80%;
+    font-weight:bold;
+}
+div.resumefind_wrapper > form{
+
+    background-color:rgba(255,255,255,0.8);
+    width:1000px;
+    height:100px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 15px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+
+
+}
+
+div.resumefind_wrapper > form select{
+    width:100px;
+    height:30px;
+}
+div.resumefind_wrapper > form button{
+    width:150px;
+}
+
+div.resumelist_wrap{
+    margin-bottom:400px;
+}
+
+div.resumelist_wrap table{
+    width:1000px;
+    border:none;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+}
+
+/* joboffer fillter */
+
+div.jobofferfind_wrapper{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div.jobofferfind_wrapper > h1{
+    margin-top:50px;
+    font-size:3em;
+    margin-right:80%;
+    font-weight:bold;
+}
+div.jobofferfind_wrapper > form{
+    background-color:rgba(255,255,255,0.8);
+    width:1000px;
+    height:100px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 15px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+}
+
+div.jobofferfind_wrapper > form select{
+    width:100px;
+    height:30px;
+}
+div.jobofferfind_wrapper > form button{
+    width:150px;
+}
+
+div.jobofferlist_wrap{
+    margin-bottom:400px;
+}
+
+div.jobofferlist_wrap table{
+    width:1000px;
+    border:none;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+}
+
+/*search list*/
+form#header_allsearch{
+    margin-top:50px;
+    background-color:rgba(255,255,255,0.8);
+    width:1000px;
+    height:100px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 15px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+}
+
+table.board_list{
+    width:1000px;
+    border:none;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+    margin-bottom:20px;
+}
